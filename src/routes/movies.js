@@ -11,7 +11,7 @@ router.post('/', verify, subscription, async (req, res) => {
     const {
         data: { Title, Released, Director, Genre },
     } = await axios.get(
-        `http://www.omdbapi.com/?i=tt3896198&apikey=96680d56add&t=${query}&type=movie`
+        `http://www.omdbapi.com/?i=tt3896198&apikey=96680d56&t=${query}&type=movie`
     )
 
     if (!Title || !Released || !Director || !Genre) {
