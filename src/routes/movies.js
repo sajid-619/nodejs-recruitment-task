@@ -25,7 +25,6 @@ router.post('/', verify, subscription, async (req, res) => {
         Released: new Date(Date.parse(Released)),
         Genre,
         Director,
-        author: userId,
     })
 
     movie
