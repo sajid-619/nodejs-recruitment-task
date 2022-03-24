@@ -52,13 +52,13 @@ App provides two endpoints `/auth` and `/movies`
 ## /auth example request
 
 To authorize user call the auth service using for example `curl`. We assume
-that the auth service is running of the default port `3000`.
+that the auth service is running of the app port `3000`.
 
 Request
 
 ```
 
-curl --location --request POST '0.0.0.0:8081/auth' \
+curl --location --request POST '0.0.0.0:3000/auth' \
 --header 'Content-Type: application/json' \
 --data-raw '{
 "username": "basic-thomas",
@@ -79,7 +79,7 @@ Response
 
 ## /movies example request
 
-To add movie to database call that endpoint for example using `Postman` app. Service is still running on post `8081`
+To add movie to database call that endpoint for example using `Postman` app. Service is still running on post `3000`
 
 First of all, add header to your API call
 

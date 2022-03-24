@@ -5,7 +5,7 @@ const { authFactory, AuthError } = require('./auth')
 require('dotenv').config()
 require('./db/connection')
 
-const PORT = process.env.APP_PORT || 3000
+const PORT = 3000
 const { JWT_SECRET } = process.env
 
 if (!JWT_SECRET) {
