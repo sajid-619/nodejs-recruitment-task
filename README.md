@@ -58,7 +58,7 @@ Request
 
 ```
 
-curl --location --request POST '0.0.0.0:3000/auth' \
+curl --location --request POST '0.0.0.0:8081/auth' \
 --header 'Content-Type: application/json' \
 --data-raw '{
 "username": "basic-thomas",
