@@ -33,7 +33,7 @@ the default value by setting the `APP_PORT` env var
 
 ```
 
-APP_PORT=8081 docker-compose up -d
+APP_PORT=8081 
 
 ```
 
@@ -79,7 +79,7 @@ Response
 
 ## /movies example request
 
-To add movie to database call that endpoint for example using `Postman` app. Service is still running on post `3000`
+To add movie to database call that endpoint for example using `Postman` app. Service is still running on post `8081`
 
 First of all, add header to your API call
 
@@ -101,10 +101,7 @@ Response
     "Title": "Spider-Man",
     "Released": "2002-05-03T00:00:00.000Z",
     "Genre": "Action, Adventure, Sci-Fi",
-    "Director": "Sam Raimi",
-    "author": "434",
-    "createdAt": "2021-07-14T09:42:54.664Z",
-    "__v": 0
+    "Director": "Sam Raimi"
 }
 ```
 
